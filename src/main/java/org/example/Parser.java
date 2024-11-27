@@ -11,7 +11,7 @@ public class Parser {
         Gson gson = new Gson();
         Root root = null;
 
-        try(FileReader reader = new FileReader("test.json")){
+        try(FileReader reader = new FileReader("file.json")){
             root = gson.fromJson(reader, Root.class);
             return root;
         }catch (Exception e){
